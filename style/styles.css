@@ -1,4 +1,5 @@
-body {
+* {
     text-align: center;
     background-color: beige;
+    font-family: 'Ubuntu', sans-serif;
   }
