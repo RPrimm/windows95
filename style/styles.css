@@ -3,3 +3,16 @@
     background-color: beige;
     font-family: 'Ubuntu', sans-serif;
   }
+
+button {
+  background-color: black;
+  color: beige;
+  font-size: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: beige;
+  color: black;
+}
