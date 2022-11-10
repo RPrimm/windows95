@@ -1,0 +1,61 @@
+html {
+    background-color: beige;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
+
+.homeButtons {
+  margin: 10px;
+}
+
+button {
+  background-color: black;
+  color: beige;
+  font-size: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+button:hover {
+  background-color: beige;
+  color: black;
+}
+
+#projectsList {
+  border: 3px solid black;
+  border-radius: 12px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.projects {
+  width: 80%;
+  display: inline-block;
+  background-color: rgb(173, 173, 150);
+  border-radius: 12px;
+  border: 3px solid black;
+  margin-top: 10px;
+}
+
+#conwayImg {
+  height: auto;
+  width: auto;
+  max-height: 150px;
+  border: 3px solid black;
+  border-radius: 12px;
+}
+
+.projectButtons {
+  background-color: black;
+  color: beige;
+  font-size: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.projectButtons:hover {
+  background-color: rgb(173, 173, 150);
+}
