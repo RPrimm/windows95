@@ -4,11 +4,19 @@ html {
     text-align: center;
   }
 
-.homeButtons {
+.homeButton {
+  background-color: Black;
+  border: 3px solid black;
+  border-radius: 12px;
+  color: beige;
+  padding: 1.2em;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
   margin: 10px;
 }
 
-button {
+.projectButtons {
   background-color: black;
   color: beige;
   font-size: 30px;
