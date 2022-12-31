@@ -5,7 +5,31 @@
         <h1>Conway's Game of Life</h1>
     </head>
     <body>
-        <canvas id="myCanvas" width="800" height="800"></canvas>
+        <div id="playWindow">
+            <div id="sideBar">
+                <div class="changeVar">
+                    <button id="pauseButton" style="margin-top: 0px;" class="sideButton" onclick="pause()">Pause</button>
+                    <button class="sideButton" onclick="reset()">Reset</button>
+                    <button class="sideButton" onclick="clearScreen()">Clear</button>
+                </div>
+                
+
+                <div class="changeVar">
+                    <div style="text-align: left;">
+                        <label for="density">Density:</label><br>
+                    </div>
+                    <input style="width: 150px;" type="text" id="density" name="density" value="0.3"><br>
+                    <div style="text-align: left; margin-top: 8px;">
+                        <label for="size">Size:</label><br>
+                    </div>
+                    <input style="width: 150px;" type="text" id="size" name="size" value="10"><br>
+                    <button id="submitButt" onclick="changeVar()">Submit</button>
+                </div>
+            </div>
+            <div id="mainCanvas">
+                <canvas id="myCanvas" width="600" height="600"></canvas>
+            </div>      
+        </div>
         <script src="javascript/ConwayScript.js"></script>
     </body>
 </html>

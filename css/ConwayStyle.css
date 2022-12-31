@@ -3,3 +3,78 @@ html {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
   }
+
+body {
+  margin: auto;
+  width: 50%;
+}
+
+canvas {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#playWindow {
+  display: flex;
+}
+
+#mainCanvas {
+  display: inline;
+}
+
+#sidebar {
+  display: inline;
+  background-color: rgb(173, 173, 150);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 200px;
+}
+
+.sideButton {
+  width: 150px;
+  display: block;
+  height: 40px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: black;
+  color: rgb(173, 173, 150);
+  transition: 0.1s;
+  font-size: 20px;
+  padding: 1px;
+  border: 2px solid black;
+}
+
+.sideButton:hover {
+  background-color: beige;
+  color: black;
+  border: 2px solid black;
+}
+
+.changeVar {
+  width: 150px;
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+#submitButt {
+  width: 150px;
+  display: block;
+  height: 40px;
+  background-color: black;
+  color: rgb(173, 173, 150);
+  transition: 0.1s;
+  font-size: 20px;
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+#submitButt:hover {
+  background-color: beige;
+  color: black;
+  border: 2px solid black;
+}
+
