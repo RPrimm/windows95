@@ -139,11 +139,17 @@ function clearScreen() {
 }
 
 function changeVar() {
-    clearScreen();
-    density = document.getElementById("density").value;
-    console.log("Density: " + density);
-    cellSize = document.getElementById("size").value;
-    console.log("Size: " + cellSize);
-    arraySize = canvasHeight/cellSize;
-    start();
+    var newDensity = document.getElementById("density").value;
+    var newSize = document.getElementById("size").value;
+    if(newDensity < 1 && newDensity > 0 && newSize != 7 && newSize != 9 && newSize > 0 && newSize <= 10) {
+        clearScreen();
+        density = newDensity;
+        cellSize = newSize
+        arraySize = canvasHeight/cellSize;
+        start();
+    } else {
+        alert("Error! Improper input:\n\nDensity:     0 < n < 1\nSize:          1 <= n <= 10, n != 7,9");
+    }
+        
+    
 }
