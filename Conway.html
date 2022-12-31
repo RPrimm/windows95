@@ -1,20 +1,21 @@
 <DOCTYPE! html>
     <head>
         <link rel="stylesheet " href="css/ConwayStyle.css">
-        
-        <h1>Conway's Game of Life</h1>
     </head>
     <body>
+        <div id="menuBar">
+            <h1 style="margin-bottom: 0;">Conway's Game of Life</h1>
+            <button class="menuButton" onclick="window.location.href='index.html'">Home</button>
+            <button class="menuButton" onclick="window.location.href='https://github.com/RPrimm/RPrimm.github.io/blob/main/javascript/ConwayScript.js'">Github</button>
+        </div>
         <div id="playWindow">
             <div id="sideBar">
-                <div class="changeVar">
+                <div class="block-wrapper">
                     <button id="pauseButton" style="margin-top: 0px;" class="sideButton" onclick="pause()">Pause</button>
                     <button class="sideButton" onclick="reset()">Reset</button>
                     <button class="sideButton" onclick="clearScreen()">Clear</button>
                 </div>
-                
-
-                <div class="changeVar">
+                <div class="block-wrapper">
                     <div style="text-align: left;">
                         <label for="density">Density:</label><br>
                     </div>
@@ -23,7 +24,7 @@
                         <label for="size">Size:</label><br>
                     </div>
                     <input style="width: 150px;" type="text" id="size" name="size" value="10"><br>
-                    <button id="submitButt" onclick="changeVar()">Submit</button>
+                    <button class="sideButton" onclick="changeVar()">Submit</button>
                 </div>
             </div>
             <div id="mainCanvas">
