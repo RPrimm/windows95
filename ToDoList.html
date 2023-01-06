@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet " href="css/ToDoList.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0e4f6708d9.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <Title>To-Do List</Title>
+    </head>
+    <body>
+        <div class="menu-container">
+            <a href="index.html"><button class="menu-button" id="home-button" ><i class="fa-solid fa-house"></i></button></a>
+            <div id="timer"></div>
+            <button class="menu-button" id="login-button">Log In</button>
+        </div>
+        <div class="todo-container">
+            <!-- <div class="todo-item">
+                    <div class="todo-item-left" style="justify-self: start;">
+                        <input type="checkbox" id="check1">
+                        <label for="check1">Title</label>
+                    </div>
+                    <div class="todo-item-right">
+                        <i class="fa-solid fa-pen-to-square"></ i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+            </div> -->
+            <button class="todo-item" id="add-button">Add +</button>
+            <div id="add-modal" class="modal">
+                <div class="modal-content">
+                    <input type="text" id="title" placeholder="Title"><br><br>
+                    <!-- <input type="text" id="description" placeholder="description"><br><br> -->
+                    <textarea id="description" rows="8" placeholder="Description"></textarea><br><br>
+                    <button class="close" id="submit-information"><i class="fa-solid fa-check"></i></button>
+                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+        <script src="javascript/ToDoListScript.js"></script>
+    </body>
+</html>

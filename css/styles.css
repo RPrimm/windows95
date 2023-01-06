@@ -1,17 +1,15 @@
-html {
-    background-color: beige;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-  }
 
 body{
   margin: 0;
+  background-color: beige;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #menuBar {
   width: 100%;
   height: 120px;
   background-color: rgb(173, 173, 150);
+  text-align: center;
 }
 
 .homeButton {
@@ -26,35 +24,30 @@ body{
   margin: 10px;
 }
 
-.projectButtons {
-  background-color: black;
-  color: beige;
-  font-size: 30px;
-  border-radius: 12px;
-  transition: 0.3s;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 button:hover {
   background-color: beige;
   color: black;
 }
 
-#projectsList {
-  border: 3px solid black;
-  border-radius: 12px;
-  display: inline-block;
-  padding-bottom: 10px;
+.project-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-.projects {
-  width: 80%;
-  display: inline-block;
+.project-item {
   background-color: rgb(173, 173, 150);
   border-radius: 12px;
   border: 3px solid black;
-  margin-top: 10px;
+  text-align: center;
+  width: auto;
+  min-width: 350px;
+  height: 330px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #conwayImg {

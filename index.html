@@ -1,39 +1,39 @@
 <DOCTYPE! html>
-  <script src="https://kit.fontawesome.com/0e4f6708d9.js" crossorigin="anonymous"></script>
   <head>
     <link rel="stylesheet " href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e4f6708d9.js" crossorigin="anonymous"></script>
     <Title>Rocket Primm</Title>
   </head>
-  
+
   <body>
     <div id="menuBar">
-      <!--home bar buttons-->
       <h1 style="font-size: 40; margin-bottom: 0px;">Welcome to my Website!</h1>
       <button class="homeButton" onclick="window.location.href='https://linkedin.com/in/rocket-primm-b81600250'"><i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i></button>
       <button class="homeButton" onclick="window.location.href='https://github.com/RPrimm'"><i class="fa-brands fa-github fa-2xl fa-fw"></i></button>
       <a href="About.html"><button class="homeButton"><i class="fa-solid fa-user fa-2xl fa-fw"></i></button></a>
     </div>
-    
-    <!--columns-->
-    <div id="projectsTab">
-      <h2 style="font-size: 30;">Projects</h2>
-      <div id="projectsList">
-          <div class="projects">
-            <h3>Conway's Game of Life</h3>
-            <img id="conwayImg" src="assets/conwayPic2.png">
-            <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
-            <p style="margin: 0;">The classic Conway's Game of Life.<br>Built with JavaScript.</p>
-            <a href="Conway.html"><button class="projectButtons">Check it Out!</button></a>
-          </div>
-          <div class="projects">
-            <h3>Coming Soon...</h3>
-            
-          </div>
-      </div>
-    </div>
-
+    <ul class="project-container">
+        <li class="project-item">
+          <h3>Conway's Game of Life</h3>
+          <img id="conwayImg" src="assets/conwayPic2.png">
+          <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
+          <p style="margin: 0;">The classic Conway's Game of Life.<br>Built with JavaScript, HTML, and CSS.</p>
+          <a href="Conway.html"><button class="projectButtons">Check it Out!</button></a>
+        </li>
+        <li class="project-item">
+          <h3>To Do List</h3>
+          <img id="" src="">
+          <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
+          <p style="margin: 0;">A basic to-do list with login to save.<br>Built with JavaScript, HTML, and CSS.</p>
+          <a href="ToDoList.html"><button class="projectButtons">Check it Out!</button></a>
+        </li>
+        <li class="project-item">
+          <h3>Coming Soon...</h3>
+        </li>
+        
+      </ul>
   </body>
 </html>
