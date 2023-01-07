@@ -1,6 +1,8 @@
 :root {
-    --primary-color: #EDC7B7;
-    --secondary-color: #123C69;
+    --primary-color: #e2e2df;
+    --secondary-color: #460b8e;
+    --tertiary-color: #25064c;
+    --font-color: #fff;
 }
 
 body {
@@ -19,18 +21,25 @@ body {
 .menu-button {
     width: 100px;
     height: 50px;
-    border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--font-color);
     font-size: 1.3rem;
     border-radius: 20px;
-    transition: .2s;
+    transition: 0.2s;
     cursor: pointer;
+    box-shadow: 0px 6px var(--tertiary-color) ;
+    border: none;
 }
 
 .menu-button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+}
+
+.menu-button:active {
+    transform: translate(0px, 6px);
+    box-shadow: none;
 }
 
 #home-button {
@@ -48,27 +57,37 @@ body {
     align-items: center;
 }
 
-#todo-items {
-    padding-bottom: 10px;
-}
-
 .todo-item {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--font-color);
     width: 500px;
     height: 50px;
     margin: 10px;
     border: 3px solid var(--secondary-color);
     transition: .2s;
-    font-size: 1.5rem;
+    font-size: 20px;
+    border-radius: 100px;
+    display: flex;
 }
 
 #add-button {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    vertical-align: baseline;
     width: 506px;
     height: 56px;
+    border-radius: 100px;
+    box-shadow: 0px 6px var(--tertiary-color) ;
+}
+
+#add-button:hover {
+    cursor: pointer;
+}
+
+#add-button:active {
+    transform: translate(0px, 6px);
+    box-shadow: none;
 }
 
 .todo-item:hover {
@@ -77,22 +96,25 @@ body {
 }
 
 .todo-item-left {
-    top: 50%;
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
-    float: left;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    width: 50%;
+    margin-left: 10px;
 }
 
 .todo-item-right {
-    top: 50%;
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
-    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .fa-solid{
     margin: 5px;
     margin-top: 0;
+    z-index: 9;
 }
 
 .fa-solid:hover {
@@ -112,30 +134,55 @@ body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
   }
 
   .modal-content {
-    background-color: #fefefe;
+    background-color: var(--secondary-color);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
     width: 400px; /* Could be more or less, depending on screen size */
     text-align: center;
+    border-radius: 50px;
+    box-shadow: -10px 10px var(--tertiary-color);
   }
   
   /* The Close Button */
+  .close {
+    font-size: large;
+    width: 80px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+  }
 
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
+  #submit-information {
+    background-color: rgb(93, 232, 93);
+    box-shadow: 0px 6px rgb(16, 149, 16);
+    margin-right: 10px;
+  }
+  #submit-information:hover {
+    cursor: pointer;
+    background-color: rgb(44, 236, 50);
+  }
+  #submit-information:active {
+    transform: translate(0px, 6px);
+    box-shadow: none;
+  }
+
+  #close-modal {
+    background-color: rgb(240, 75, 75);
+    box-shadow: 0px 6px rgb(215, 27, 6);
     cursor: pointer;
   }
 
-  .tab5 {
-    tab-size: 5;
+  #close-modal:hover {
+    background-color: rgb(181, 7, 7);
+  }
+
+  #close-modal:active {
+    transform: translate(0px, 6px);
+    box-shadow: none;
   }
 
   #title {

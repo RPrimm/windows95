@@ -18,11 +18,15 @@
             <!-- <div class="todo-item">
                     <div class="todo-item-left" style="justify-self: start;">
                         <input type="checkbox" id="check1">
-                        <label for="check1">Title</label>
+                        <label for="check1" id="title1">Title</label>
                     </div>
                     <div class="todo-item-right">
-                        <i class="fa-solid fa-pen-to-square"></ i>
-                        <i class="fa-solid fa-trash"></i>
+                        <div class="edit">
+                            <i class="fa-solid fa-pen-to-square"></ i>
+                        </div>
+                        <div class="trash">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
                     </div>
             </div> -->
             <button class="todo-item" id="add-button">Add +</button>
@@ -32,7 +36,7 @@
                     <!-- <input type="text" id="description" placeholder="description"><br><br> -->
                     <textarea id="description" rows="8" placeholder="Description"></textarea><br><br>
                     <button class="close" id="submit-information"><i class="fa-solid fa-check"></i></button>
-                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="close" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
                 </div>
             </div>
         </div>
