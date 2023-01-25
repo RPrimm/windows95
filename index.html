@@ -10,28 +10,44 @@
 
   <body>
     <div id="menuBar">
-      <h1 style="font-size: 40; margin-bottom: 0px;">Welcome to my Website!</h1>
-      <button class="homeButton" onclick="window.location.href='https://linkedin.com/in/rocket-primm-b81600250'"><i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i></button>
-      <button class="homeButton" onclick="window.location.href='https://github.com/RPrimm'"><i class="fa-brands fa-github fa-2xl fa-fw"></i></button>
-      <a href="About.html"><button class="homeButton"><i class="fa-solid fa-user fa-2xl fa-fw"></i></button></a>
+      <h1 style="font-size: 40; margin: 20px; margin-left: 5px; width: 300px;">Rocket Primm</h1>
+      <div style="justify-content: right; width: 90%; display: flex;">
+        <button class="homeButton" onclick="window.location.href='https://linkedin.com/in/rocket-primm-b81600250'"><i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i></button>
+        <button class="homeButton" onclick="window.location.href='https://github.com/RPrimm'"><i class="fa-brands fa-github fa-2xl fa-fw"></i></button>
+        <a href="About.html"><button class="homeButton"><i class="fa-solid fa-user fa-2xl fa-fw"></i></button></a>
+      </div>
     </div>
     <ul class="project-container">
         <li class="project-item">
-          <h3>Conway's Game of Life</h3>
-          <img id="conwayImg" src="assets/conwayPic2.png">
-          <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
-          <p style="margin: 0;">The classic Conway's Game of Life.<br>Built with JavaScript, HTML, and CSS.</p>
-          <a href="Conway.html"><button class="projectButtons">Check it Out!</button></a>
+          <div class="project-item-header">
+            <p style="margin: 0px; text-align: left; display: inline-block;">Conway's Game of Life</p>
+            <img class="close-button" src="assets/close-icon.png">
+          </div>
+          <div class="project-item-body">
+            <img id="conwayImg" src="assets/conwayPic2.png">
+            <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
+            <p style="margin: 0;">The classic Conway's Game of Life.<br>Built with JavaScript, HTML, and CSS.</p>
+            <a href="Conway.html"><button class="projectButtons">Check it Out!</button></a>
+          </div>
         </li>
         <li class="project-item">
-          <h3>To Do List</h3>
-          <img id="" src="">
-          <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
-          <p style="margin: 0;">A basic to-do list with login to save.<br>Built with JavaScript, HTML, and CSS.</p>
-          <a href="ToDoList.html"><button class="projectButtons">Check it Out!</button></a>
+          <div class="project-item-header">
+            <p style="margin: 0px; text-align: left; display: inline-block;">To-Do List</p>
+            <img class="close-button" src="assets/close-icon.png">
+          </div>
+          <div class="project-item-body">
+            <img id="" src="">
+            <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
+            <p style="margin: 0;">A basic to-do list with login to save.<br>Built with JavaScript, HTML, and CSS.</p>
+            <a href="ToDoList.html"><button class="projectButtons">Check it Out!</button></a>
+          </div>
+          
         </li>
         <li class="project-item">
-          <h3>Coming Soon...</h3>
+          <div class="project-item-header">
+            <p style="margin: 0px; text-align: left; display: inline-block;">Coming Soon...</p>
+            <img class="close-button" src="assets/close-icon.png">
+          </div>
         </li>
         
       </ul>
