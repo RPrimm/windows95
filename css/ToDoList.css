@@ -154,12 +154,14 @@ body {
     height: 60px;
     border-radius: 20px;
     border: none;
+    transition: 0.2s;
   }
 
   #submit-information {
     background-color: rgb(93, 232, 93);
     box-shadow: 0px 6px rgb(16, 149, 16);
     margin-right: 10px;
+    transition: 0.2s;
   }
   #submit-information:hover {
     cursor: pointer;

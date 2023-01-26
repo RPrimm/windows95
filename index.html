@@ -9,47 +9,50 @@
   </head>
 
   <body>
+    <!--Menu Bar-->
     <div id="menuBar">
-      <h1 style="font-size: 40; margin: 20px; margin-left: 5px; width: 300px;">Rocket Primm</h1>
-      <div style="justify-content: right; width: 90%; display: flex;">
-        <button class="homeButton" onclick="window.location.href='https://linkedin.com/in/rocket-primm-b81600250'"><i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i></button>
-        <button class="homeButton" onclick="window.location.href='https://github.com/RPrimm'"><i class="fa-brands fa-github fa-2xl fa-fw"></i></button>
-        <a href="About.html"><button class="homeButton"><i class="fa-solid fa-user fa-2xl fa-fw"></i></button></a>
+      <h1 style="font-size: 40; margin: 20px; width: 300px;">Rocket Primm</h1>
+      <div id="menu-button">
+        <button class="home-button" onclick="window.location.href='https://linkedin.com/in/rocket-primm-b81600250'"><i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i></button>
+        <button class="home-button" onclick="window.location.href='https://github.com/RPrimm'"><i class="fa-brands fa-github fa-2xl fa-fw"></i></button>
+        <a href="About.html"><button class="home-button"><i class="fa-solid fa-user fa-2xl fa-fw"></i></button></a>
       </div>
     </div>
-    <ul class="project-container">
+    <!--Project List-->
+    <ul id="project-container">
+        <!--Conway's Game of Life-->
         <li class="project-item">
           <div class="project-item-header">
             <p style="margin: 0px; text-align: left; display: inline-block;">Conway's Game of Life</p>
             <img class="close-button" src="assets/close-icon.png">
           </div>
           <div class="project-item-body">
-            <img id="conwayImg" src="assets/conwayPic2.png">
+            <img class="project-image" src="assets/conwayPic2.png">
             <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
             <p style="margin: 0;">The classic Conway's Game of Life.<br>Built with JavaScript, HTML, and CSS.</p>
-            <a href="Conway.html"><button class="projectButtons">Check it Out!</button></a>
+            <a href="Conway.html"><button class="project-button">Check it Out!</button></a>
           </div>
         </li>
+        <!--To-Do List-->
         <li class="project-item">
           <div class="project-item-header">
             <p style="margin: 0px; text-align: left; display: inline-block;">To-Do List</p>
             <img class="close-button" src="assets/close-icon.png">
           </div>
           <div class="project-item-body">
-            <img id="" src="">
+            <img class="project-image" src="assets/todo-list-pic.png">
             <h4 style="margin: 0; margin-top: 5px;">Description:</h4>
             <p style="margin: 0;">A basic to-do list with login to save.<br>Built with JavaScript, HTML, and CSS.</p>
-            <a href="ToDoList.html"><button class="projectButtons">Check it Out!</button></a>
-          </div>
-          
+            <a href="ToDoList.html"><button class="project-button">Check it Out!</button></a>
+          </div>        
         </li>
+        <!--Coming Soon-->
         <li class="project-item">
           <div class="project-item-header">
             <p style="margin: 0px; text-align: left; display: inline-block;">Coming Soon...</p>
             <img class="close-button" src="assets/close-icon.png">
           </div>
         </li>
-        
       </ul>
   </body>
 </html>
