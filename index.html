@@ -5,26 +5,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0e4f6708d9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <Title>Rocket Primm</Title>
   </head>
 
   <body>
-    <!--Menu Bar-->
-    <div id="menuBar">
+    <!-- Menu Bar
+    <div id="menu-bar">
       <h1 style="font-size: 40; margin: 20px; width: 300px;">Rocket Primm</h1>
       <div id="menu-button">
         <button class="home-button" onclick="window.location.href='https://linkedin.com/in/rocket-primm-b81600250'"><i class="fa-brands fa-linkedin-in fa-2xl fa-fw"></i></button>
         <button class="home-button" onclick="window.location.href='https://github.com/RPrimm'"><i class="fa-brands fa-github fa-2xl fa-fw"></i></button>
         <a href="About.html"><button class="home-button"><i class="fa-solid fa-user fa-2xl fa-fw"></i></button></a>
       </div>
+    </div> -->
+    <!--Desktop Icons-->
+    <div class="icon draggable" id="conway-icon" style="top: 0px">
+      <i class="fa-sharp fa-solid fa-boxes-stacked fa-2xl" style="padding-top: 28px;"></i>
+      <p>Game of Life</p>
+    </div>
+    <div class="icon draggable" id="todo-icon" style="top: 100px">
+      <i class="fa-sharp fa-solid fa-boxes-stacked fa-2xl" style="padding-top: 28px;"></i>
+      <p>To-Do List</p>
+    </div>
+    <div class="icon draggable" id="linkedin-icon" style="top: 200px">
+      <i class="fa-brands fa-solid fa-linkedin-in fa-2xl" style="padding-top: 28px;"></i>
+      <p>Linked In</p>
+    </div>
+    <div class="icon draggable" id="github-icon" style="top: 300px">
+      <i class="fa-brands fa-solid fa-github fa-2xl" style="padding-top: 28px;"></i>
+      <p>Github</p>
+    </div>
+    <div class="icon draggable" id="about-icon" style="top: 400px">
+      <i class="fa-solid fa-solid fa-user fa-2xl" style="padding-top: 28px;"></i>
+      <p>About me</p>
     </div>
     <!--Project List-->
     <ul id="project-container">
         <!--Conway's Game of Life-->
-        <li class="project-item">
+        <li class="project-item draggable" id="conway-window" style="top: 200px; left: 500px;">
           <div class="project-item-header">
             <p style="margin: 0px; text-align: left; display: inline-block;">Conway's Game of Life</p>
-            <img class="close-button" src="assets/close-icon.png">
+            <img class="close-button" id="conway-close" src="assets/close-icon.png">
           </div>
           <div class="project-item-body">
             <img class="project-image" src="assets/conwayPic2.png">
@@ -34,10 +57,10 @@
           </div>
         </li>
         <!--To-Do List-->
-        <li class="project-item">
+        <li class="project-item draggable" id="todo-window" style="top: 200px; left: 500px;">
           <div class="project-item-header">
             <p style="margin: 0px; text-align: left; display: inline-block;">To-Do List</p>
-            <img class="close-button" src="assets/close-icon.png">
+            <img class="close-button" id="todo-close" src="assets/close-icon.png">
           </div>
           <div class="project-item-body">
             <img class="project-image" src="assets/todo-list-pic.png">
@@ -46,13 +69,12 @@
             <a href="ToDoList.html"><button class="project-button">Check it Out!</button></a>
           </div>        
         </li>
-        <!--Coming Soon-->
-        <li class="project-item">
-          <div class="project-item-header">
-            <p style="margin: 0px; text-align: left; display: inline-block;">Coming Soon...</p>
-            <img class="close-button" src="assets/close-icon.png">
-          </div>
-        </li>
-      </ul>
+      <footer>
+        <div class="footer-tab">
+          Example Text
+        </div>
+      </footer>
+
+      <script src="javascript/scripts.js"></script>
   </body>
 </html>
