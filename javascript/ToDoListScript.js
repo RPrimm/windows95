@@ -43,9 +43,6 @@ $(document).ready(function() {
   $(document).on('click', '.trash', function() {
     $(this).parent().parent().remove();
   });
-  // $('.trash').click(function() {
-  //   $(this).parent().parent().remove();
-  // });
 
   //allows editing of todo items
   $(document).on('click', '.edit', function() {
@@ -53,6 +50,5 @@ $(document).ready(function() {
     $('#add-modal').css('display', 'block');
     editTitle = $(this).parent().parent().find('label').attr('id');
     $('#title').val($('#'+editTitle).text());
-    // $('#description').val($('#'+editTitle).text());
   });
 });

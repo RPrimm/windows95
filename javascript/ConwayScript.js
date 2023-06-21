@@ -1,7 +1,7 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-//change thing variables
+//main variables
 var canvasWidth = 600;
 var canvasHeight = 600;
 var cellSize = 10;

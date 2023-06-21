@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="css/DSVisualizer.css">
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Data Structure Visualizer</title>
+</head>
+<body>
+    <h1>Data Structure Visualizer</h1>
+    <div id="playWindow">
+        <div class="sidebar" id="select">
+            <button class="sidebar-button" id="stack_button">Stack</button>
+            <button class="sidebar-button" id="queue_button">Queue</button>
+            <button class="sidebar-button" id="bst_button">BST</button>
+            <button class="sidebar-button" id="avl_button">AVL</button>
+        </div>
+        <canvas id="myCanvas" width="800" height="600"  style="background-color: #000;"></canvas> 
+        <div class="sidebar" id="interact">
+            <!--STACK-->
+            <div class="right_button" id="stack" style="display: none">
+                <button class="sidebar-button" id="push">Push</button>
+                <button class="sidebar-button" id="pop">Pop</button>
+                <div class="info">The stack is a data structure that stores elements using the LIFO&#40;Last In First Out&#41; property.<br><br>Stacks have two main methods:
+                    push and pop. The push method pushes something onto the stack while the pop method pops something off the top of the stack.<br><br>Some real world use 
+                    cases of a stack include: browsers storing previously visited URLs, managing open and closed brackets in programming languages, and the undo&#40;ctrl+z&#41;
+                    and redo&#40;ctrl+y&#41; functions in many applications. 
+                </div>
+                <div class="info time">Time complexity for Stack Methods:<br><br>Push: O&#40;1&#41;<br><br>Pop: O&#40;1&#41;</div>
+            </div>
+            <!--QUEUE-->
+            <div class="right_button" id="queue" >
+                <button class="sidebar-button" id="enqueue">Enqueue</button>
+                <button class="sidebar-button" id="dequeue">Dequeue</button>
+                <div class="info">The Queue is a data structure that store elements using the FIFO&#40;First In First Out&#41; property.<br><br>Queues have two
+                    main methods: Enqueue and Dequeue. Enqueue puts something into the back of the queue and Dequeue takes something out of the front of the 
+                    queue.<br><br>Some real world use cases of a Queue include: A queue of processes waiting for the CPU in an OS, a queue of packets in a router, 
+                    and a queue of documents waiting to be printed by a printer.
+                </div>
+                <div class="info time">Time complexity for Queue Methods:<br><br>Enqueue: O&#40;1&#41;<br><br>Dequeue: O&#40;1&#41;<br><br>Note that these
+                time complexities are only possible if the Queue is implemented using a linked-list. </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="javascript/DSVisualizer.js"></script>
+</body>
+</html>

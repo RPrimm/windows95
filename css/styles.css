@@ -149,7 +149,17 @@ footer{
   position: absolute;
   bottom: 0;
   display: flex;
+}
+
+#footer-left {
+  display: flex;
   align-items: center;
+}
+
+#footer-right {
+  display: flex;
+  background-color: #000080;
+  margin-left: 95%;
 }
 
 .footer-tab {
@@ -164,4 +174,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#language {
+  justify-self: right;
 }
