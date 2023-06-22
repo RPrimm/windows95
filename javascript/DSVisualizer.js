@@ -37,14 +37,7 @@ $('#push').click(function (){
         //updates next node's position
         SNODE_COUNT++;
         SYPOS = 50 + (Math.floor(SNODE_COUNT/8) * 100);
-        SXPOS = 50 + ((SNODE_COUNT % 8) * 100);
-        // if(SNODE_COUNT % 8 == 0) {
-        //     SXPOS += 0;
-        // } else if(Math.floor(SNODE_COUNT/8) % 2 == 0){
-        //     SXPOS += 100;
-        // } else {
-        //     SXPOS -= 100;
-        // }    
+        SXPOS = 50 + ((SNODE_COUNT % 8) * 100);  
         stackData++; 
     }
 });
@@ -85,6 +78,7 @@ $('#enqueue').click(function (){
         QNODE_COUNT++;
         QYPOS = 50 + (Math.floor(QNODE_COUNT/8) * 100);
         QXPOS = 50 + ((QNODE_COUNT % 8) * 100);
+        console.log(QXPOS);
         // if(QNODE_COUNT % 8 == 0) {
         //     QXPOS += 0;
         // } else if(Math.floor(QNODE_COUNT/8) % 2 == 0){
@@ -139,7 +133,12 @@ $('#queue_button').click(function () {
         QUEUE_NODE_LIST[i].drawNode();
     }
 });
-
+$('#bst_button').click(function () {
+    $('.right_button').hide();
+    $('#bst').show();
+    screenBlack();
+    //redraw every node
+});
 ///////////////////////////NODE CLASS///////////////////////////////
 class Node {
     constructor(x, y, data) {

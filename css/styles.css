@@ -149,6 +149,7 @@ footer{
   position: absolute;
   bottom: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 #footer-left {
@@ -159,7 +160,7 @@ footer{
 #footer-right {
   display: flex;
   background-color: #000080;
-  margin-left: 95%;
+
 }
 
 .footer-tab {

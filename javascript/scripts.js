@@ -3,6 +3,11 @@ $(function() {
     $(".draggable").draggable();
 });
 
+//time
+let date = new Date();
+let time = date.getTime();
+console.log(date.getHours()+":"+date.getMinutes());
+
 //language
 $('[lang="ge"]').hide();
 $('#language').click(function() {
