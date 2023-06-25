@@ -10,12 +10,16 @@ console.log(date.getHours()+":"+date.getMinutes());
 
 //language
 $('[lang="ge"]').hide();
-$('#language').click(function() {
+$('.language').click(function() {
     $('[lang="ge"]').toggle();
     $('[lang="en"]').toggle();
 });
 
-//conway
+//tells which window was most recently clicked on
+var active = "";
+
+//CONWAY
+//open window functionality
 let conwayOpen = false;
 $("#conway-icon").dblclick(function() {
     if(!conwayOpen) {
@@ -25,12 +29,21 @@ $("#conway-icon").dblclick(function() {
         conwayOpen = true;
     } 
 });
+// close button functionality
 $("#conway-close").click(function() {
     if(conwayOpen) {
         $("#conway-window").hide();
         $('#conway-footer').remove();
         conwayOpen = false;
     } 
+});
+//makes the conway window the active tab
+$('#conway-window').click(function() {
+    if(active != 'c'){
+        active = 'c';
+        $('.project-item').css('z-index', '2');
+        $('#conway-window').css('z-index', '9');
+    }
 });
 
 //todo
@@ -50,6 +63,13 @@ $("#todo-close").click(function() {
         todoOpen = false;
     }
 });
+$('#todo-window').click(function() {
+    if(active != 't'){
+        active = 't';
+        $('.project-item').css('z-index', '2');
+        $('#todo-window').css('z-index', '9');
+    }
+});
 
 //Data Strucutre
 let dsvOpen = false;
@@ -66,6 +86,13 @@ $("#dsv-close").click(function() {
         $("#dsv-window").hide();
         $('#dsv-footer').remove();
         dsvOpen = false;
+    }
+});
+$('#dsv-window').click(function() {
+    if(active != 'd'){
+        active = 'd';
+        $('.project-item').css('z-index', '2');
+        $('#dsv-window').css('z-index', '9');
     }
 });
 

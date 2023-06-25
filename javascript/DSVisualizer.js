@@ -7,13 +7,13 @@ var stage = new createjs.Stage("myCanvas");
 const CANVAS_WIDTH = 800;
 const CANVAS_HEIGHT = 600;
 var NODE_SIZE = 30;
-const NODE_COLOUR = "DeepSkyBlue";
+const NODE_COLOUR = "#5BE9B9";
 
 // blacks out canvas
 function screenBlack() {
     //draws rectangle over screen
     var rect = new createjs.Shape();
-    rect.graphics.beginFill('black');
+    rect.graphics.beginFill('#dee5e4');
     rect.graphics.drawRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
     rect.graphics.endFill();
     stage.addChild(rect); 
@@ -77,17 +77,8 @@ $('#enqueue').click(function (){
         //updates next node's position
         QNODE_COUNT++;
         QYPOS = 50 + (Math.floor(QNODE_COUNT/8) * 100);
-        QXPOS = 50 + ((QNODE_COUNT % 8) * 100);
-        console.log(QXPOS);
-        // if(QNODE_COUNT % 8 == 0) {
-        //     QXPOS += 0;
-        // } else if(Math.floor(QNODE_COUNT/8) % 2 == 0){
-        //     QXPOS += 100;
-        // } else {
-        //     QXPOS -= 100;
-        // }    
+        QXPOS = 50 + ((QNODE_COUNT % 8) * 100);  
         queueData++; 
-        console.log(QXPOS, QYPOS);
     }
 });
 
@@ -110,9 +101,25 @@ $('#dequeue').click(function () {
         QXPOS = tempList[tempList.length-1].getX();
         QYPOS = tempList[tempList.length-1].getY();
         QNODE_COUNT--;
-        console.log(QXPOS, QYPOS);
     }
 });
+
+// var BNODE_COUNT = 0;
+// var BXPOS = CANVAS_WIDTH/2;
+// var BYPOS = 50;
+// var ROOT = null;
+// var bstData = 0
+
+// //BST FUNCTIONS: INSERT
+// $('#insert').click(function () {
+//     let newNode = new BNode(BXPOS, BYPOS, bstData);
+//     if(ROOT == null) {
+//         ROOT = newNode;
+//     }
+//     newNode.drawNode();
+//     BNODE_COUNT++;
+//     bstData++;
+// });
 
 ///////////////////////////MENU BUTTONS///////////////////////////////
 $('#stack_button').click(function () {
@@ -133,12 +140,12 @@ $('#queue_button').click(function () {
         QUEUE_NODE_LIST[i].drawNode();
     }
 });
-$('#bst_button').click(function () {
-    $('.right_button').hide();
-    $('#bst').show();
-    screenBlack();
-    //redraw every node
-});
+// $('#bst_button').click(function () {
+//     $('.right_button').hide();
+//     $('#bst').show();
+//     screenBlack();
+//     //redraw every node
+// });
 ///////////////////////////NODE CLASS///////////////////////////////
 class Node {
     constructor(x, y, data) {
@@ -151,7 +158,7 @@ class Node {
             this.circle.x = x;
             this.circle.y = y;
         
-        this.text = new createjs.Text(data, "20px Arial", "#000");
+        this.text = new createjs.Text(data, "20px Arial", "#141c3a");
             this.text.x = x - this.text.getMeasuredWidth()/2;
             this.text.y = y + this.text.getMeasuredHeight()/2;
             this.text.textBaseline = "alphabetic";
@@ -178,3 +185,24 @@ class Node {
     }
     setData(data) {this.data = data}
 }
+
+// ///////////////////////////////BST NODE CLASS///////////////////////////////
+// class BNode extends Node {
+//     constructor(x, y, data) {
+//         super(x, y, data);
+//         this.leftChild = null;
+//         this.rightChild = null;
+//     }
+//     getLeftChild() {
+//         return this.leftChild;
+//     }
+//     getRightChild() {
+//         return this.rightChild;
+//     }
+//     setLeftChild(newChild) {
+//         this.leftChild = newChild;
+//     }
+//     setRightChild(newChild) {
+//         this.rightChild = newChild;
+//     }
+// }

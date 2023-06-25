@@ -9,36 +9,6 @@ body{
   font-family: 'oldFont';
 }
 
-#menu-bar {
-  width: 100%;
-  height: 80px;
-  color: white;
-  display: flex;
-}
-
-#menu-button {
-  justify-content: right; 
-  width: 90%; 
-  display: flex;
-}
-
-.home-button {
-  height: 100%;
-  background-color: #008080;
-  color: white;
-  border: none;
-  padding: 1.2em;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.2s;
-  justify-self: right;
-}
-
-.home-button:hover {
-  background-color: white;
-  color: #008080;
-}
-
 .icon{
   position: absolute;
   text-align: center;
@@ -47,7 +17,6 @@ body{
   color: #FFF;
   text-shadow: 1px 1px 2px #000;
 }
-
 .icon:hover {
   cursor: pointer;
   background-color: rgba(100, 100, 150, 0.5)
@@ -92,10 +61,6 @@ body{
   cursor: move;
 }
 
-.project-item-body {
-  padding: 10px;
-}
-
 .close-button {
   background-color: #c0c0c0;
   float: right;
@@ -106,7 +71,6 @@ body{
   border-bottom: 2px solid #404040;
   cursor: pointer;
 }
-
 .close-button:active {
   border-left: 2px solid #404040;
   border-top: 2px solid #404040;
@@ -133,7 +97,6 @@ body{
   font-size: 20px;
   margin: 10px;
 }
-
 .project-button:active {
   border-left: 2px solid #404040;
   border-top: 2px solid #404040;
@@ -159,8 +122,6 @@ footer{
 
 #footer-right {
   display: flex;
-  background-color: #000080;
-
 }
 
 .footer-tab {
@@ -177,6 +138,10 @@ footer{
   align-items: center;
 }
 
-#language {
-  justify-self: right;
+.language {
+  height: 80%;
+  align-self: center;
+  margin: 3px;
+  margin-left: 0;
+  align-items: center;
 }
